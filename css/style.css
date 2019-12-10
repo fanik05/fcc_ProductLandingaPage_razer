@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+}
+
+#whole-page {
+  background-color: #111111;
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #888888;
+  transition: 0.4s;
+}
+
+.nav-link:hover {
+  color: #44D62C;
+}
+
+header {
+  position: fixed;
+  min-height: 75px;
+  background-color: #222222;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  z-index: +1;
+}
+
+.logo {
+  margin-left: 2%;
+}
+
+#header-img {
+  height: 20px;
+}
+
+nav {
+  width: 50%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+#invis {
+  height: 75px;
+}
+
+#products {
+  text-align: center;
+  background-color: #111111;
+}
+
+.title {
+  color: #44D62C;
+  font-weight: normal;
+  font-size: 1.8em;
+  padding: 1%;
+  margin-top: 1%;
+}
+
+.desc {
+  color: #888888;
+  width: 70%;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+
+.keyboard-info {
+  background: url("https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/h83/hc9/9018448052254/razer-huntsman-elite-1920x700-desktop.jpg") no-repeat center;
+  height: 700px;
+  position: relative;
+  border-top: 1px solid #44D62C;
+}
+
+.keyboard-title {
+  color: #FFFFFF;
+  font-weight: normal;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+.keyboard-desc {
+  color: #888888;
+}
+
+.chroma-logo {
+  position: absolute;
+  bottom: 2em;
+  right: 1em;
+}
+
+.second-keyboard {
+  background: url("https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/hd6/h65/9058337947678/razer-blackwidow-elite-category-hero-desktop.jpg") no-repeat center;
+}
+
+.product-preview {
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border-top: 1px solid #44D62C;
+}
+
+#deals {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #44D62C;
+}
+
+.huntsman {
+  width: 45%;
+  background-image: url("https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/hc4/hc5/9018448183326/razer-huntsman-1920x700-desktop.jpg"); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  border-bottom: 1px solid #44D62C;
+  min-height: 300px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.price {
+  color: #44D62C;
+  padding: 2%;
+}
+
+.hunt-logo {
+  margin-top: 40%;
+  padding: 2%;
+  margin-left: 80%;
+}
+
+.te {
+  background-image: url("https://d4kkpd69xt9l7.cloudfront.net/sys-master/root/h24/h6b/9237974777886/razer-huntsman-tournament-edition-480x587-mid-tout.jpg");
+}
+
+#newsletter {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid #44D62C;
+}
+
+.email-logo {
+  width: 150px;
+  height: 150px;
+  min-width: 100px;
+  min-height: 100px;
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.email-head {
+  padding: 0;
+  margin: 0;
+}
+
+.email-sub {
+  padding: 0;
+  margin: 0;
+}
+
+#form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  font-family: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+input[type=email] {
+  width: 40%;
+  padding: 0.5%;
+  background: inherit;
+  border: 1px solid #888888;
+  outline: none;
+  color: #888888;
+  margin-top: 2%;
+}
+
+input[type=email]:focus {
+  border: 1px solid #44D62C;
+}
+
+input[type=submit] {
+  width: 8%;
+  padding: 0.5%;
+  border: none;
+  border-radius: 2px;
+  background: #44D62C;
+  margin-top: 1%;
+  font-weight: 800;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  color: #FFFFFF;
+}
+
+.footer {
+  background: #222222;
+  text-align: center;
+}
+
+.footer-text {
+  color: #888888;
+  padding: 2%;
+}
+
+@media (max-width: 667px) {
+  header {
+    flex-direction: column;
+  }
+  
+  #invis {
+    height: 150px;
+  }
+  
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  li {
+    padding: 2%;
+  }
+  
+  .desc {
+    font-size: 1.1em;
+    line-height: 1.2;
+    width: 90%;
+    text-align: justify;
+  }
+  
+  #deals {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .huntsman {
+    width: 90%;
+  }
+  
+  input[type=email] {
+    width: 60%;
+  }
+  
+  input[type=submit] {
+    width: 25%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hunt-logo {
+    visibility: hidden;
+  }
+}
