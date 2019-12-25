@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-body{
+html,
+body {
   font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
 }
 
 #whole-page {
@@ -57,6 +59,16 @@ ul {
 
 #invis {
   height: 75px;
+}
+
+section::before,
+section::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -75px; 
+  height: 75px; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 
 #products {
