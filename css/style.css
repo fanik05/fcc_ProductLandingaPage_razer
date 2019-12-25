@@ -103,7 +103,7 @@ section::before {
 .keyboard-title {
   color: #FFFFFF;
   font-weight: normal;
-  padding: 1%;
+  padding-top: 1%;
   margin-top: 2%;
 }
 
@@ -124,7 +124,7 @@ section::before {
 .product-preview {
   display: flex;
   justify-content: center;
-  padding: 5%;
+  padding: 6%;
   border-top: 1px solid #44D62C;
 }
 
