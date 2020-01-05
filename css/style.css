@@ -19,7 +19,14 @@ ul {
   list-style: none;
 }
 
+#navbar ul li {
+  display: inline-block;
+}
+
 .nav-link {
+  display: flex;
+  align-items: center;
+  height: 75px;
   text-decoration: none;
   color: #888888;
   transition: 0.4s;
