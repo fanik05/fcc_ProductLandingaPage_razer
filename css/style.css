@@ -247,7 +247,16 @@ input[type=submit]:hover {
 
 .footer-text {
   color: #888888;
-  padding: 2%;
+  padding: 0.8%;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #44D62C;
+}
+
+.footer-link:hover {
+  border-bottom: #44D62C solid 1px;
 }
 
 @media (max-width: 667px) {
